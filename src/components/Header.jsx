@@ -10,12 +10,16 @@ const Header = () => {
   const location = useLocation()
 
   const navItems = [
-    { id: 'home', label: 'Home', path: '/' },
-    { id: 'about', label: 'About', path: '/about' },
-    { id: 'projects', label: 'Projects', path: '/projects' },
-    { id: 'Experience', label: 'Experience', path: '/experience' },
-    { id: 'resume', label: 'Resume', path: '/resume' },
-    { id: 'contact', label: 'Contact', path: '/contact' },
+    { id: 'home', label: 'Home', path: '/personal-portfolio/' },
+    { id: 'about', label: 'About', path: '/personal-portfolio/about' },
+    { id: 'projects', label: 'Projects', path: '/personal-portfolio/projects' },
+    {
+      id: 'Experience',
+      label: 'Experience',
+      path: '/personal-portfolio/experience',
+    },
+    { id: 'resume', label: 'Resume', path: '/personal-portfolio/resume' },
+    { id: 'contact', label: 'Contact', path: '/personal-portfolio/contact' },
   ]
 
   const handleNavClick = (path) => {
