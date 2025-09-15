@@ -6,7 +6,7 @@ import About from './components/About'
 import Experience from './components/Experience'
 import Resume from './components/Resume'
 import Contact from './components/Contact'
-import './assets/App.css'
+import './styles/App.css'
 
 function App() {
   return (
