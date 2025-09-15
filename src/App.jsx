@@ -1,7 +1,4 @@
-'use client'
-import './styles/App.css'
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Homepage from './components/Homepage'
 import Projects from './components/Projects'
