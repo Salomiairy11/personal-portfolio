@@ -17,15 +17,12 @@ function App() {
         <Header />
         <main className="main-content">
           <Routes>
-            <Route path="/personal-portfolio" element={<Homepage />} />
-            <Route path="/personal-portfolio/projects" element={<Projects />} />
-            <Route path="/personal-portfolio/about" element={<About />} />
-            <Route
-              path="/personal-portfolio/experience"
-              element={<Experience />}
-            />
-            <Route path="/personal-portfolio/resume" element={<Resume />} />
-            <Route path="/personal-portfolio/contact" element={<Contact />} />
+            <Route path="/" element={<Homepage />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>
