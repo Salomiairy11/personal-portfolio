@@ -23,6 +23,7 @@ const Experience = () => {
   return (
     <section className="experience-section section">
       <div className="container">
+        <h2 className="section-title">Work Experience</h2>
         <div className="experience-grid">
           {experience.map((cert) => (
             <div key={cert.id} className="experience-card card">
