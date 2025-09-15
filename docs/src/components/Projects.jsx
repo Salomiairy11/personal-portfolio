@@ -12,7 +12,8 @@ const Projects = () => {
         'This project is an interactive Bank Loan Analysis Dashboard using Power BI and SQL to help financial institutions monitor loan performance and borrower details. It features three dashboards—Summary, Overview, and Details—offering insights into key metrics, lending trends, and borrower profiles with dynamic filters. ',
       image: bank,
       technologies: ['Power BI', 'SQL Server'],
-      liveDemo: 'https://example.com',
+      liveDemo:
+        'https://drive.google.com/drive/folders/1b-YdaEjGPt88JypdbLXC4z-AcfV5i2bF?usp=sharing',
       github:
         'https://github.com/Salomiairy11/Bank-Loan-Analysis-Power-BI-Dashboard',
     },
@@ -23,7 +24,8 @@ const Projects = () => {
         'This project is an end-to-end vendor analytics solution built using SQL Server and Python. It consolidates purchase, sales, and freight data, cleans and transforms over 100K records, and applies statistical techniques to uncover insights which are presented in a Power BI dashboard to support better decision-making',
       image: vendor,
       technologies: ['Python', 'SQL Server', 'Power BI'],
-      liveDemo: 'https://example.com',
+      liveDemo:
+        'https://drive.google.com/drive/folders/1b-YdaEjGPt88JypdbLXC4z-AcfV5i2bF?usp=sharing',
       github:
         'https://github.com/Salomiairy11/Vendor-Performance-Analysis-Using-Python-and-SQL-SERVER',
     },
