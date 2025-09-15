@@ -1,0 +1,53 @@
+.experience-section {
+  background: #1a1d29;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.experience-card {
+  overflow: hidden;
+}
+
+.experience-card:hover .experience-image img {
+  transform: scale(1.05);
+}
+
+.experience-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.experience-organization {
+  color: #ff6b35;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.experience-date {
+  color: #b8bcc8;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.experience-description {
+  color: #b8bcc8;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.experience-link {
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}

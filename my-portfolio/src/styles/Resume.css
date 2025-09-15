@@ -1,0 +1,66 @@
+.resume-section {
+  background: #1f2230; 
+  padding: 5rem 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #ff6b35; 
+}
+
+
+.download-btn,
+.preview-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+}
+
+
+.download-btn {
+  background: #ff6b35;
+  color: #fff;
+}
+
+.download-btn:hover {
+  background: #e55b2d;
+  transform: translateY(-2px);
+}
+
+.preview-link {
+  background: #2d3142;
+  color: #fff;
+  border: 1px solid #3c3f52;
+}
+
+.preview-link:hover {
+  background: #3c3f52;
+  transform: translateY(-2px);
+}
+
+
+.download-btn,
+.preview-link {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .download-btn,
+  .preview-link {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
