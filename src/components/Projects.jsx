@@ -3,7 +3,11 @@ import bank from '../assets/Bank.PNG'
 import vendor from '../assets/vendor.PNG'
 import cus from '../assets/sentiment.png'
 
+import { useState } from 'react'
+
 const Projects = () => {
+  const [openProjectId, setOpenProjectId] = useState(null)
+
   const projects = [
     {
       id: 1,
@@ -12,8 +16,7 @@ const Projects = () => {
         'This project is an interactive Bank Loan Analysis Dashboard using Power BI and SQL to help financial institutions monitor loan performance and borrower details. It features three dashboards—Summary, Overview, and Details—offering insights into key metrics, lending trends, and borrower profiles with dynamic filters. ',
       image: bank,
       technologies: ['Power BI', 'SQL Server'],
-      liveDemo:
-        'https://drive.google.com/drive/folders/1b-YdaEjGPt88JypdbLXC4z-AcfV5i2bF?usp=sharing',
+      videoId: 'XlzIoEYYdNQ',
       github:
         'https://github.com/Salomiairy11/Bank-Loan-Analysis-Power-BI-Dashboard',
     },
@@ -24,8 +27,7 @@ const Projects = () => {
         'This project is an end-to-end vendor analytics solution built using SQL Server and Python. It consolidates purchase, sales, and freight data, cleans and transforms over 100K records, and applies statistical techniques to uncover insights which are presented in a Power BI dashboard to support better decision-making',
       image: vendor,
       technologies: ['Python', 'SQL Server', 'Power BI'],
-      liveDemo:
-        'https://drive.google.com/drive/folders/1b-YdaEjGPt88JypdbLXC4z-AcfV5i2bF?usp=sharing',
+      videoId: '3bTQlEEDZL0',
       github:
         'https://github.com/Salomiairy11/Vendor-Performance-Analysis-Using-Python-and-SQL-SERVER',
     },
@@ -36,12 +38,13 @@ const Projects = () => {
         'This project is a Customer Feedback Analysis Dashboard built with Streamlit. It lets users upload review data (CSV), automatically cleans text, classifies sentiment, and extracts key themes via K-Means clustering. The dashboard includes interactive visualizations to help uncover actionable insights',
       image: cus,
       technologies: ['Python', 'Streamlit', 'Scikit-Learn'],
-      liveDemo:
-        'https://drive.google.com/drive/folders/1b-YdaEjGPt88JypdbLXC4z-AcfV5i2bF?usp=sharing',
+      videoId: 'R83dXU4h0As',
       github:
         'https://github.com/Salomiairy11/Customer-Sentiment-and-Topic-Analysis-Dashboard',
     },
   ]
+
+  const openProject = projects.find((p) => p.id === openProjectId)
 
   return (
     <section className="projects-section section">
@@ -68,12 +71,15 @@ const Projects = () => {
                 </div>
                 <div className="project-links">
                   <a
-                    href={project.liveDemo}
+                    href="#"
                     className="btn-primary"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    style={{ color: 'white' }}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      setOpenProjectId(project.id)
+                    }}
                   >
-                    Demo Video
+                    Video Demo
                   </a>
                   <a
                     href={project.github}
@@ -89,6 +95,62 @@ const Projects = () => {
           ))}
         </div>
       </div>
+      {openProject && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'rgba(0,0,0,0.6)',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            zIndex: 1000,
+          }}
+        >
+          <div
+            style={{
+              position: 'relative',
+              background: '#fff',
+              padding: '10px',
+              borderRadius: '10px',
+              maxWidth: '90vw',
+              maxHeight: '90vh',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <button
+              onClick={() => setOpenProjectId(null)}
+              style={{
+                position: 'absolute',
+                top: '10px',
+                right: '10px',
+                background: 'white',
+                color:'black',
+                border: 'none',
+                fontSize: '20px',
+                cursor: 'pointer',
+              }}
+            >
+              ✖
+            </button>
+            <iframe
+              width="560"
+              height="315"
+              src={`https://www.youtube.com/embed/${openProject.videoId}`}
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            >
+              Demo Video
+            </iframe>
+          </div>
+        </div>
+      )}
     </section>
   )
 }
