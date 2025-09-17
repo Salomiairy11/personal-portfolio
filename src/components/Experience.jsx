@@ -10,11 +10,10 @@ const Experience = () => {
       organization: 'LQ Digital',
       date: 'June 2025 - August 2025',
       description: `For my role as an AI Intern, I conducted the following tasks:
-          1. Analyzed user-agent interactions to extract insights from questions, reviews, and feedback, improving agent performance.
-          2. Scraped, cleaned, and structured dynamic website content to provide high-quality context for a custom AI conversational agent.
-          3. Built and integrated a LangChain & Gemini-based chat assistant with session memory for improved user interactions.
-          4. Developed FastAPI endpoints and backend workflows, connecting the agent to social media platforms and storing data in PostgreSQL.
-          5. Collaborated in Agile sprints, conducted code reviews, and documented experiments, architecture, and workflows for reproducibility.`,
+          1. Processed and analyzed user-agent interaction data using Pandas and NumPy, applied exploratory data analysis and statistical methods to detect query trends and performance bottlenecks, and visualized results with Matplotlib/Seaborn — insights from this analysis drove fine-tuning that improved response accuracy by ~15% and enhanced user satisfaction.
+          2. Scraped, cleaned, and structured dynamic website content using Python (BeautifulSoup), ensuring well-organized and contextually relevant data for a custom LangChain + Gemini-powered conversational agent.
+          3. Developed backend workflows with FastAPI to integrate the chat assistant with social media platforms.
+          4. Collaborated in Agile sprints, participated in code reviews, and maintained detailed documentation of experiments, architecture, and workflows to support reproducibility and team knowledge sharing.`,
     },
   ]
 
@@ -35,7 +34,8 @@ const Experience = () => {
                 <div className="experience-date">{cert.date}</div>
                 <p
                   className="experience-description"
-                  style={{ whiteSpace: 'pre-line' }}>
+                  style={{ whiteSpace: 'pre-line' }}
+                >
                   {experience[0].description}
                 </p>
                 <a
