@@ -11,36 +11,33 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Bank Loan Analysis Dashboard',
+      title: 'LoanDash - Bank Loan Analysis Dashboard',
       description:
         'This project is an interactive Bank Loan Analysis Dashboard using Power BI and SQL to help financial institutions monitor loan performance and borrower details. It features three dashboards—Summary, Overview, and Details—offering insights into key metrics, lending trends, and borrower profiles with dynamic filters. ',
       image: bank,
       technologies: ['Power BI', 'SQL Server'],
       videoId: 'O8_WBd7GqFI',
-      github:
-        'https://github.com/Salomiairy11/Bank-Loan-Analysis-Power-BI-Dashboard',
+      github: 'https://github.com/Salomiairy11/LoanDash/tree/main',
     },
     {
       id: 2,
-      title: 'Vendor Performance Analysis',
+      title: 'VendorLite - Vendor Performance Analysis',
       description:
         'This project is an end-to-end vendor analytics solution built using SQL Server and Python. It consolidates purchase, sales, and freight data, cleans and transforms over 100K records, and applies statistical techniques to uncover insights which are presented in a Power BI dashboard to support better decision-making',
       image: vendor,
       technologies: ['Python', 'SQL Server', 'Power BI'],
       videoId: '3bTQlEEDZL0',
-      github:
-        'https://github.com/Salomiairy11/Vendor-Performance-Analysis-Using-Python-and-SQL-SERVER',
+      github: 'https://github.com/Salomiairy11/VendorLite',
     },
     {
       id: 3,
-      title: 'Customer Sentiment Analysis',
+      title: 'SentiView - Customer Sentiment Analysis',
       description:
         'This project is a Customer Feedback Analysis Dashboard built with Streamlit. It lets users upload review data (CSV), automatically cleans text, classifies sentiment, and extracts key themes via K-Means clustering. The dashboard includes interactive visualizations to help uncover actionable insights',
       image: cus,
       technologies: ['Python', 'Streamlit', 'Scikit-Learn'],
       videoId: 'R83dXU4h0As',
-      github:
-        'https://github.com/Salomiairy11/Customer-Sentiment-and-Topic-Analysis-Dashboard',
+      github: 'https://github.com/Salomiairy11/SentiView',
     },
   ]
 
@@ -130,7 +127,7 @@ const Projects = () => {
                 top: '10px',
                 right: '10px',
                 background: 'white',
-                color:'black',
+                color: 'black',
                 border: 'none',
                 fontSize: '20px',
                 cursor: 'pointer',
