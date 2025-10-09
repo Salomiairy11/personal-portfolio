@@ -16,7 +16,7 @@ const Projects = () => {
         'This project is an interactive Bank Loan Analysis Dashboard using Power BI and SQL to help financial institutions monitor loan performance and borrower details. It features three dashboards—Summary, Overview, and Details—offering insights into key metrics, lending trends, and borrower profiles with dynamic filters. ',
       image: bank,
       technologies: ['Power BI', 'SQL Server'],
-      videoId: 'XlzIoEYYdNQ',
+      videoId: 'O8_WBd7GqFI',
       github:
         'https://github.com/Salomiairy11/Bank-Loan-Analysis-Power-BI-Dashboard',
     },
