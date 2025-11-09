@@ -12,12 +12,17 @@ const About = () => {
       details: 'Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn',
     },
     {
-      title: 'Microsoft Power BI',
-      details: 'DAX, data modeling, interactive visualizations',
-    },
-    {
       title: 'SQL',
       details: 'MySQL, SQL Server, PostgreSQL',
+    },
+    {
+      title: 'U.S. healthcare processes',
+      details:
+        'ACA, Medicaid, Medicare, Marketplace coverage, enrollment trends, tax credits',
+    },
+    {
+      title: 'Microsoft Power BI',
+      details: 'DAX, data modeling, interactive visualizations',
     },
     {
       title: 'Excel',
@@ -25,7 +30,7 @@ const About = () => {
     },
     {
       title: 'GitHub',
-      details: '',
+      details: 'Git, version control, collaborative workflows',
     },
   ]
 
@@ -59,8 +64,7 @@ const About = () => {
             <div className="about-text">
               <h3>Hello! I'm Salomi Airy</h3>
               <p>
-                I’m an eighth-semester CSIT student with a strong passion for
-                data analysis and problem-solving. Over the past year, I’ve
+                I’m an aspiring data analyst who, over the past year, has
                 worked on projects that range from building Power BI dashboards
                 and SQL pipelines to creating Python-based data analysis
                 dashboards. I specialize in working with data end-to-end — from

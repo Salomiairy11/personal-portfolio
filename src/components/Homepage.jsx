@@ -22,7 +22,7 @@ const Homepage = () => {
                 Hi, I'm <span className="highlight">Salomi Airy</span>
               </h1>
               <p className="hero-subtitle">
-                Data Analyst | Aspiring Data Scientist
+                Data Analyst | Aspiring Data Professional
               </p>
               <p className="hero-description">
                 I build interactive dashboards, perform advanced analytics, and

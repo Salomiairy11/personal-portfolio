@@ -2,6 +2,7 @@ import '../styles/Projects.css'
 import bank from '../assets/Bank.PNG'
 import vendor from '../assets/vendor.PNG'
 import cus from '../assets/sentiment.png'
+import us from '../assets/US.png'
 
 import { useState } from 'react'
 
@@ -11,16 +12,27 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'LoanDash - Bank Loan Analysis Dashboard',
+      title: 'US Health Insurance Coverage (2010-2016) Analysis',
       description:
-        'This project is an interactive Bank Loan Analysis Dashboard using Power BI and SQL to help financial institutions monitor loan performance and borrower details. It features three dashboards—Summary, Overview, and Details—offering insights into key metrics, lending trends, and borrower profiles with dynamic filters. ',
-      image: bank,
-      technologies: ['Power BI', 'SQL Server'],
+        'This project generates state-level and nationwide insights on insurance coverage, Medicaid expansion, and marketplace tax credits, informing policy understanding and highlighting trends such as 19.6M increase in coverage and 277% reduction in uninsured rates (2010–2016). ',
+      image: us,
+      technologies: ['Python', 'Pandas', 'Matplotlib'],
       videoId: 'O8_WBd7GqFI',
-      github: 'https://github.com/Salomiairy11/LoanDash/tree/main',
+      github:
+        'https://github.com/Salomiairy11/US-Health-Insurance-Coverage-2010-2016-Analysis',
     },
     {
       id: 2,
+      title: 'SentiView - Customer Sentiment Analysis',
+      description:
+        'This project is a Customer Feedback Analysis Dashboard built with Streamlit. It lets users upload review data (CSV), automatically cleans text, classifies sentiment, and extracts key themes via K-Means clustering. The dashboard includes interactive visualizations to help uncover actionable insights',
+      image: cus,
+      technologies: ['Python', 'Streamlit', 'Scikit-Learn'],
+      videoId: 'R83dXU4h0As',
+      github: 'https://github.com/Salomiairy11/SentiView',
+    },
+    {
+      id: 3,
       title: 'VendorLite - Vendor Performance Analysis',
       description:
         'This project is an end-to-end vendor analytics solution built using SQL Server and Python. It consolidates purchase, sales, and freight data, cleans and transforms over 100K records, and applies statistical techniques to uncover insights which are presented in a Power BI dashboard to support better decision-making',
@@ -30,14 +42,14 @@ const Projects = () => {
       github: 'https://github.com/Salomiairy11/VendorLite',
     },
     {
-      id: 3,
-      title: 'SentiView - Customer Sentiment Analysis',
+      id: 4,
+      title: 'LoanDash - Bank Loan Analysis Dashboard',
       description:
-        'This project is a Customer Feedback Analysis Dashboard built with Streamlit. It lets users upload review data (CSV), automatically cleans text, classifies sentiment, and extracts key themes via K-Means clustering. The dashboard includes interactive visualizations to help uncover actionable insights',
-      image: cus,
-      technologies: ['Python', 'Streamlit', 'Scikit-Learn'],
-      videoId: 'R83dXU4h0As',
-      github: 'https://github.com/Salomiairy11/SentiView',
+        'This project is an interactive Bank Loan Analysis Dashboard using Power BI and SQL to help financial institutions monitor loan performance and borrower details. It features three dashboards—Summary, Overview, and Details—offering insights into key metrics, lending trends, and borrower profiles with dynamic filters. ',
+      image: bank,
+      technologies: ['Power BI', 'SQL Server'],
+      videoId: 'O8_WBd7GqFI',
+      github: 'https://github.com/Salomiairy11/LoanDash/tree/main',
     },
   ]
 
