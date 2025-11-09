@@ -79,17 +79,20 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="project-links">
-                  <a
-                    href="#"
-                    className="btn-primary"
-                    style={{ color: 'white' }}
-                    onClick={(e) => {
-                      e.preventDefault()
-                      setOpenProjectId(project.id)
-                    }}
-                  >
-                    Video Demo
-                  </a>
+                  {/* Hide Video Demo for the US healthcare project */}
+                  {!(project.title && project.title.toLowerCase().includes('us health')) && (
+                    <a
+                      href="#"
+                      className="btn-primary"
+                      style={{ color: 'white' }}
+                      onClick={(e) => {
+                        e.preventDefault()
+                        setOpenProjectId(project.id)
+                      }}
+                    >
+                      Video Demo
+                    </a>
+                  )}
                   <a
                     href={project.github}
                     className="btn-secondary"
